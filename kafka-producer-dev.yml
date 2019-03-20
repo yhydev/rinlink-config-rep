@@ -1,0 +1,8 @@
+server:
+        port: 8080
+        kafka:
+                producer:
+                        bootstrap-servers: debian:9092
+                        acks: 0
+                        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+                        value-serializer: org.apache.kafka.common.serialization.StringSerializer
