@@ -8,3 +8,15 @@ kafka:
   acks: 1
   key.serializer: org.apache.kafka.common.serialization.StringSerializer
   value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+
+
+
+#log4j 配置
+log4j-config:
+ log4j:
+  rootLogging: info, stdout
+  appender:
+   stdout: org.apache.log4j.ConsoleAppender
+
+ 
+
