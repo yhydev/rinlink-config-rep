@@ -12,7 +12,7 @@ kafka:
 logging:
   level:
     root: info
-  path: d:/applog
+  path: logs
   file:
     max-size: 2KB
 
