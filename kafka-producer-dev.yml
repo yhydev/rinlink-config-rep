@@ -10,8 +10,8 @@ kafka:
     value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
 
 logging:
-  file: producer.log
   level:
     root: info
+  path: d:/applog
 
 
