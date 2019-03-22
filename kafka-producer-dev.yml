@@ -13,5 +13,6 @@ logging:
   level:
     root: info
   path: d:/applog
-
+  file:
+    max-size: 2KB
 
