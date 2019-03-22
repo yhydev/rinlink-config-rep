@@ -7,7 +7,7 @@ kafka:
   bootstrap.servers: kafka1:9092
   acks: 1
   key.serializer: org.apache.kafka.common.serialization.StringSerializer
-  value.serializer: org.apache.kafka.common.serialization.StringSerializer
+  value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
 
 logging:
   level:
