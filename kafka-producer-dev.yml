@@ -8,3 +8,11 @@ kafka:
   acks: 1
   key.serializer: org.apache.kafka.common.serialization.StringSerializer
   value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+
+logging:
+ file: producer.log
+ path: d:/applog
+ level: 
+  root: info
+
+
