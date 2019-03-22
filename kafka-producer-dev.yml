@@ -1,18 +1,17 @@
 server:
- port: 8080
+  port: 8080
 
 
 kafka:
- producer:
-  bootstrap.servers: debian:9092
-  acks: 1
-  key.serializer: org.apache.kafka.common.serialization.StringSerializer
-  value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+  producer:
+    bootstrap.servers: debian:9092
+    acks: 1
+    key.serializer: org.apache.kafka.common.serialization.StringSerializer
+    value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
 
 logging:
- file: producer.log
- path: d:/applog
- level: 
-  root: info
+  file: producer.log
+  level:
+    root: info
 
 
