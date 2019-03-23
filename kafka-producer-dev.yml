@@ -8,6 +8,4 @@ kafka:
     acks: 1
     key.serializer: org.apache.kafka.common.serialization.StringSerializer
     value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-
-logging:
-  config: classpath:log4j2.xml
+    
