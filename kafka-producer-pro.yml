@@ -10,4 +10,4 @@ kafka:
   value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
 
 logging:
-  config: classpath:log4j2.xml
+  config: classpath:log4j2-pro.xml
