@@ -8,11 +8,4 @@ kafka:
     acks: 1
     key.serializer: org.apache.kafka.common.serialization.StringSerializer
     value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-
-logging:
-  level:
-    root: info
-  path: ./logs
-  file:
-    max-size: 2KB
-
+    
