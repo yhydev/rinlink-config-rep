@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://debian/test
+
+server:
+  servlet:
+    context-path: /v1.0
