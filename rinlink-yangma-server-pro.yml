@@ -1,0 +1,24 @@
+iot-client-config:
+  platformIp: 180.101.147.89
+  platformPort: 8743
+#  platformIp: 117.60.157.137
+ # platformPort: 5683
+  #测试接口
+  #appId=L1YxaA1yduW5mgACOi2vmf7fugca
+  #secret=Nm0riiUKxfP0aSN1ak57gmmHSkUa
+
+  #生产
+  appId: iGP9qd0CwMg34pdxtL2aLishGOoa
+  secret: OsLA8ssxxywfZjmDnsOMmKuJXica
+
+  #杨马生产
+  #appId: l5sY5MZxgIctnkghYOQcLaBc8lYa
+  #secret: V2tvjZ1iQbgfmoX0yk1P7Rjw3GYa
+
+
+  #生产接口
+#  appId: 0WzkQzlNmaOGKjrdrgla67_qaRsa
+#  secret: iLkxzkZ6AbtbRBFUKzbBbzUuCVga
+
+logging:
+  config: classpath:logback-pro.xml
