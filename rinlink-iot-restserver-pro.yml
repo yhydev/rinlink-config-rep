@@ -7,3 +7,5 @@ spring:
       uri: mongodb://mongo-primary:27017/iot
 
 
+logging:
+  config: classpath:logback-pro.xml
