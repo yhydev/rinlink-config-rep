@@ -1,0 +1,18 @@
+rinlink:
+ iotRestclient:
+  endpoint: http://iot-restserver:8080
+  username: hello
+  producerName: d603
+
+wx-minapp-config:
+  appId: wx405e5781465c1746
+  secret: 05bb8de8c0db5eabb71c6501f9c32745
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-primary:27017/d603
+
+logging:
+  config: classpath:logback-pro.xml
