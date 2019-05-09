@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /v1.0
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-primary:27017/iot
+
+
