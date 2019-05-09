@@ -23,3 +23,8 @@ rinlink:
    endpoint: http://iot-restserver:8080
    username: hello
    producerName: d603
+
+
+
+logging:
+  config: classpath:logback-pro.xml
