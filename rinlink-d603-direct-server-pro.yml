@@ -1,0 +1,19 @@
+d603-udp-server:
+  port: 8087
+  packetSize: 1024
+
+topic: d603
+
+rinlink:
+  threadPool:
+    corePoolSize: 0x10
+    maxPoolSize: 0x7fffffff
+    queueCapacity: 0x10
+    keepAliveMilliSecond: 60000
+
+kafka:
+  producer:
+    bootstrap.servers: 9697375e5c2a:9092
+    acks: 1
+    key.serializer: org.apache.kafka.common.serialization.StringSerializer
+    value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
