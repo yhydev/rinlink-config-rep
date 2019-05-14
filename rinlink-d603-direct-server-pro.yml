@@ -10,8 +10,8 @@ rinlink:
   maxPoolSize: 0x7fffffff
   queueCapacity: 0x10
   keepAliveMilliSecond: 60000
-  iotRestclient:
- endpoint: http://iot-restserver:8080
+ iotRestclient:
+  endpoint: http://iot-restserver:8080
   username: hello
   producerName: d603
 
@@ -26,3 +26,5 @@ kafka:
 
 logging:
   config: classpath:logback-pro.xml
+
+
