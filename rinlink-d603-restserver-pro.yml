@@ -4,8 +4,10 @@ rinlink:
    producerId: 6537163670273654784
 
 wx-minapp-config:
-  appId: wx405e5781465c1746
-  secret: 05bb8de8c0db5eabb71c6501f9c32745
+  #appId: wx405e5781465c1746
+  #secret: 05bb8de8c0db5eabb71c6501f9c32745
+  appId: wx5eb5272c7083fdb9
+  secret: e4c5b27c3c0269b3293b6b32a8bba6f7
 
 
 spring:
