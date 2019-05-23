@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://mongo-primary:27017/iot
+      uri: mongodb://mongo-primary:27017/iot2
 
 
 logging:
