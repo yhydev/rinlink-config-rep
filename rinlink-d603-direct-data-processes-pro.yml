@@ -21,8 +21,7 @@ rinlink:
 
   iotRestclient:
    endpoint: http://iot-restserver:8080
-   username: hello
-   producerName: d603
+   producerId: 6537163670273654784
 
 
 
