@@ -1,0 +1,29 @@
+kafkaConsumer:
+  bootstrap.servers: kafka:9092
+  key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  value.deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+  group.id: d603-consumer
+  auto.offset.reset: earliest
+  enable.auto.commit: false
+
+subscribeTopic: d603
+
+
+rinlink:
+  threadPool:
+    corePoolSize: 0x10
+    maxPoolSize: 0x7fffffff
+    queueCapacity: 0x10
+    keepAliveMilliSecond: 60000
+
+  positionRestclient:
+    endpoint: http://59.110.234.106:8083
+
+  iotRestclient:
+   endpoint: http://iot-restserver:8080
+   producerId: 6537163670273654784
+
+
+
+logging:
+  config: classpath:logback-pro.xml
