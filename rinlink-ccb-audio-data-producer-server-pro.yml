@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: 1
+      buffer-memory: 0x100000000
+      compression-type: snappy
+      bootstrap-servers: kafka1:9092
+    template:
+      defaultTopic: ccbaudiodata
+
+logging:
+  config: classpath:logback-pro.xml
