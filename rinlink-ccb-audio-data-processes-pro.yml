@@ -1,0 +1,23 @@
+spring:
+  kafka:
+    consumer:
+      group-id: ccbaudiodata
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      bootstrap-servers: kafka:9092
+
+bugkiller:
+  mqtt:
+    server: emqx
+    port: 1883
+
+rinlink:
+  thread-pool:
+    corePoolSize: 150
+    maxPoolSize: 300
+    queueCapacity: 50
+    keepAliveMilliSecond: 300000
+
+
+logging:
+  config: classpath:logback-pro.xml
