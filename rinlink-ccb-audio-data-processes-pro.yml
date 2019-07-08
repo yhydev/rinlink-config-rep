@@ -10,8 +10,8 @@ bugkiller:
   mqtt:
     server: emqx
     port: 1883
-    username: testclient
-    password: 9725aa06e172b97f5b631283b59d1a28fca623ad3c3e727b0af53927aab0d131
+#    username: testclient
+#    password: 9725aa06e172b97f5b631283b59d1a28fca623ad3c3e727b0af53927aab0d131
 
 rinlink:
   thread-pool:
