@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/ota
+
+logging:
+  config: classpath:logback-pro.xml
+
