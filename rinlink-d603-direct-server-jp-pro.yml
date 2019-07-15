@@ -2,7 +2,7 @@ d603-udp-server:
   port: 8087
   packetSize: 1024
 
-topic: d603
+topic: app-d603
 
 rinlink:
  threadPool:
