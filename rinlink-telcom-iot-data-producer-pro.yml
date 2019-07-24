@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: kafka1:9092
+      acks: 1
+      key.serializer: org.apache.kafka.common.serialization.StringSerializer
+      value.serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+    template:
+      defaultTopic: app.n256
+
+logging:
+  config: classpath:logback-pro.xml
