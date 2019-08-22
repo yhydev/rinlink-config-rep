@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /v1.0
+  port: 8080
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongodb:27017/test
+  kafka:
+    producer:
+      bootstrap-servers: mongodb:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: 1
+    template:
+      default-topic: async-iot-device-data

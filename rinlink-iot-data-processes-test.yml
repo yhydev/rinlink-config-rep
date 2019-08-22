@@ -1,0 +1,35 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: kafka:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit:  true
+      group-id: ${spring.application.name}
+    producer:
+      bootstrap-servers: ${spring.kafka.consumer.bootstrap-servers}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: 1
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/iot
+
+producer-topics:
+  http-notice-data: ${message-listener-containers.http-notice-data.topic}
+
+message-listener-containers:
+  async-iot-device-data:
+    topic: async-iot-device-data
+    concurrency: 3
+  http-notice-data:
+    topic: http-notice-data
+    concurrency: 3
+
+
+logging:
+  config: classpath:logback-pro.xml
+
+
+
