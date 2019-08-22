@@ -5,12 +5,16 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://mongodb:27017/test
+      uri: mongodb://mongo:27017/test
   kafka:
     producer:
-      bootstrap-servers: mongodb:9092
+      bootstrap-servers: kafka:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       acks: 1
     template:
       default-topic: async-iot-device-data
+
+logging:
+  config: classpath:logback-pro.xml
+
