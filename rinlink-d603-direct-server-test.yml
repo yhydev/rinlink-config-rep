@@ -1,0 +1,15 @@
+netty:
+  server:
+    port: 8080
+    workerThreads: 30
+    handlerThreads: 30
+
+rinlink:
+  iotRestclient:
+    endpoint: http://web:8080/v1.0
+    producerId: 5B2E427E34000000
+    secret: 6cGF0V3rDZ
+
+
+logging:
+  config: classpath:logback-pro.xml
